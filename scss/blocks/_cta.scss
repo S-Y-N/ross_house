@@ -1,0 +1,30 @@
+.cta {
+    padding: 180px 0;
+    background: linear-gradient(180deg,
+        $dark 10.42%,
+        rgba(36, 43, 51, 0.00) 50.52%,
+        $dark 90.1%),
+        linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%,
+        rgba(36, 43, 51, 0.90) 100%),
+        url(./../img/cta_bg.jpg), #C4C4C4;
+}
+.cta__title {
+    font-family: $font-accent;
+    font-size: 36px;
+    font-weight: 700;
+    color: $accent;
+    margin-bottom: 17px;
+}
+.cta__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.cta__text {
+    line-height: 1.5;
+}
+.cta__form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px 30px;
+}
