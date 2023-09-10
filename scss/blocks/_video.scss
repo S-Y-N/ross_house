@@ -1,20 +1,14 @@
 .video {
+    overflow: hidden;
     text-align: center;
     position: relative;
 
     &::after{
         content: "IV";
 
-        position: absolute;
-        top: 0;
         left: calc(50% + 350px);
-        line-height: 1.15;
-
-        opacity: 0.02;
-
-        font-size: 400px;
-        font-family: $font-accent;
-
+        
+        @include decoration;
     }
 }
 
@@ -49,7 +43,4 @@
 .video__link:hover .video__icon{
     transform: translate(-50%,-50%) scale(1.1);
     filter: saturate(1.5);
-}
-.video__img {
-  
 }

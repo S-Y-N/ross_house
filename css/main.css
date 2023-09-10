@@ -142,7 +142,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
 }
 
 .none {
@@ -168,7 +168,7 @@ body {
   padding-top: 30px;
   padding-bottom: 74px;
   min-height: 840px;
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("./../img/header.jpg"), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("./../img/header.jpg");
 }
 
 .header__top-content {
@@ -228,14 +228,15 @@ body {
 }
 
 .benefits {
+  overflow: hidden;
   padding: 120px 0;
   position: relative;
 }
 .benefits::after {
   content: "II";
+  left: calc(50% + 555px);
   position: absolute;
   top: 0;
-  left: calc(50% + 555px);
   line-height: 1.15;
   opacity: 0.02;
   font-size: 400px;
@@ -268,10 +269,10 @@ body {
 }
 .appartments::after {
   content: "III";
-  position: absolute;
-  top: 0;
   right: calc(50% + 555px);
   transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
   line-height: 1.15;
   opacity: 0.02;
   font-size: 400px;
@@ -406,14 +407,15 @@ body {
 }
 
 .video {
+  overflow: hidden;
   text-align: center;
   position: relative;
 }
 .video::after {
   content: "IV";
+  left: calc(50% + 350px);
   position: absolute;
   top: 0;
-  left: calc(50% + 350px);
   line-height: 1.15;
   opacity: 0.02;
   font-size: 400px;
@@ -458,14 +460,15 @@ body {
 }
 .section-map::after {
   content: "V";
-  position: absolute;
-  top: 180px;
   right: calc(50% + 550px);
   transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
   line-height: 1.15;
   opacity: 0.02;
   font-size: 400px;
   font-family: "Playfair Display", serif;
+  top: 180px;
 }
 
 .map__title {
