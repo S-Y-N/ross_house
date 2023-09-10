@@ -16,3 +16,13 @@ body {
 .none {
     display: none !important;
 }
+.title{
+    font-size: 36px;
+    font-family: $font-accent;
+    font-weight: 700;
+    color: $accent;
+}
+.link-email{
+    color: $accent !important;
+    font-weight: 700;
+}

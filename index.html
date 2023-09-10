@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header none">
+    <header class="header none1">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-content">
@@ -49,7 +49,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="benefits none">
+        <section class="benefits none1">
             <div class="container">
                 <div class="benefits_content">
                     <div class="benefits_content-item">
@@ -72,9 +72,9 @@
                 </div>
             </div>
         </section>
-        <section class="appartments none">
+        <section class="appartments none1">
             <div class="container">
-                <h2 class="appartments__title">
+                <h2 class="appartments__title title">
                     Наші квартири
                 </h2>
                 <div class="appartmetns__cards">
@@ -98,9 +98,9 @@
                 </div>
             </div>
         </section>
-        <section class="cta none">
+        <section class="cta none1">
             <div class="container">
-                <h2 class="cta__title">
+                <h2 class="cta__title title">
                     Хочете подивитися?
                 </h2>
                 <div class="cta__wrapper">
@@ -110,25 +110,95 @@
                         <input type="text" class="form__input" placeholder="Ваше телефон" autocomplete="off">
                         
                         <p class="form__privacy">
-                            *Ми никому не передаємо ваші дані. <br>
-                            І не зберігаємо ваш номер у базі.  
+                            *Ми нікому не передаємо ваші дані <br>
+                            та не зберігаємо ваш номер у базі.  
                         </p>
                         <button type="submit" class="form__btn">Переглянути район</button>
                     </form>
                 </div>
             </div>
         </section>
-        <section class="video">
+        <section class="video none1">
             <div class="container">
-                <a href="#" class="video__link">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video__link">
                     <img src="./img/play-button.svg" alt="" class="video__icon">
                     <img src="./img/video-img.jpg" alt="" class="video__img">
 
                 </a>
             </div>
         </section>
+        <section class="section-map none1">
+            <div class="container">
+                <h2 class="map__title title">Район на мапі</h2>
+                <div class="map__google-map">
+                    <div class="map" id="map"></div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback none1">
+            <div class="container">
+                <h2 class="feedback__title title">Маєте запитання?</h2>
+           
+                <form action="#" class="feedback__form form">
+                    <p class="form__privacy">
+                        *Ми нікому не передаємо ваші дані <br>
+                        та не зберігаємо ваш номер у базі.  
+                    </p>
+                    <input type="text" class="form__input" placeholder="Ваше Ім'я" autocomplete="off">
+                    <input type="text" class="form__input" placeholder="Ваше телефон" autocomplete="off">
+                    <button type="submit" class="form__btn">Переглянути район</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <!-- https://www.youtube.com/watch?v=dQw4w9WgXcQ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer__logo">
+                    <a href="">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__nav">
+                    <nav >
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Про комплекс</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Район</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Каталог квартир</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Кредит</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Поселення та переїзд</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Сервісні послуги</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Екологічність</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Інвестиційні можливості</a></li>
+                            <li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Програма лояльності</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__address">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__list-item">Адреса: Шолом-Алейхема, 1</li>
+                        <li class="footer-nav__list-item"><a href="tel:+380676633777" class="footer-nav__list-link">Телефон: +38-067-66-33-777</a></li>
+                        <li class="footer-nav__list-item">Відділ продажу: 08:00 - 18:00</li>
+                        <li>E-mail: <a class="link-email" href="mailto:rosshouse@ukr.net">rosshouse@ukr.net</a></li>
+                        <li class="footer-nav__list-item">Програма лояльності</li>
+                    </ul>
+                    <ul class="socials">
+                        <li class=""><a href="#"><img src="./img/social/youtube.svg" alt=""></a></li>
+                        <li class=""><a href="#"><img src="./img/social/vk.svg" alt=""></a></li>
+                        <li class=""><a href="#"><img src="./img/social/facebook.svg" alt=""></a></li>
+                        <li class=""><a href="#"><img src="./img/social/instagram.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -149,6 +149,18 @@ body {
   display: none !important;
 }
 
+.title {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #D4C17F;
+}
+
+.link-email {
+  color: #D4C17F !important;
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -179,7 +191,7 @@ body {
   text-align: center;
   font-size: 48px;
   font-family: "Playfair Display", serif;
-  color: #d4af7f;
+  color: #D4C17F;
   font-weight: 700;
 }
 
@@ -217,6 +229,17 @@ body {
 
 .benefits {
   padding: 120px 0;
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .benefits_content {
@@ -240,6 +263,21 @@ body {
   line-height: 1.35;
 }
 
+.appartments {
+  position: relative;
+}
+.appartments::after {
+  content: "III";
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+}
+
 .appartmetns__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -247,10 +285,6 @@ body {
 }
 
 .appartments__title {
-  font-family: "Playfair Display", serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: #d4af7f;
   margin-bottom: 88px;
 }
 
@@ -311,10 +345,6 @@ body {
 }
 
 .cta__title {
-  font-family: "Playfair Display", serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: #d4af7f;
   margin-bottom: 17px;
 }
 
@@ -368,7 +398,7 @@ body {
   color: #fff;
   font-weight: 700;
   text-align: center;
-  background-color: #d4af7f;
+  background-color: #D4C17F;
   transition: background-color 0.2s ease-in;
 }
 .form__btn:hover {
@@ -377,6 +407,17 @@ body {
 
 .video {
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 350px);
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .video__link {
@@ -409,4 +450,78 @@ body {
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.1);
   filter: saturate(1.5);
+}
+
+.section-map {
+  padding: 180px 0;
+  position: relative;
+}
+.section-map::after {
+  content: "V";
+  position: absolute;
+  top: 180px;
+  right: calc(50% + 550px);
+  transform: translate(50%, 0%);
+  line-height: 1.15;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+}
+
+.map__title {
+  margin-bottom: 88px;
+}
+
+.map {
+  height: 358px;
+  background: #626262;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+
+.feedback__title {
+  margin-bottom: 38px;
+}
+
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer {
+  padding-top: 72px;
+  padding-bottom: 51px;
+  background-color: #2D343C;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+.footer_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer__logo {
+  margin-top: -12px;
+}
+
+.footer-nav__list {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__address {
+  display: grid;
+  gap: 20px;
+}
+
+.socials {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
