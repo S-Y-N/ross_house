@@ -10,4 +10,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+
+    @include mediaTablet {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
 }

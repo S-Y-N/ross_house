@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header none1">
+    <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-content">
@@ -27,6 +27,12 @@
                                 <li class="nav__list-item"><a href="#" class="nav__list-link">Контакти</a></li>
                             </ul>
                         </nav>
+                    </div>
+
+                    <div class="header__nav-btn">
+                        <button class="nav-icon-btn">
+                            <div class="nav-icon"></div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -49,7 +55,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="benefits none1">
+        <section class="benefits">
             <div class="container">
                 <div class="benefits_content">
                     <div class="benefits_content-item">
@@ -72,7 +78,7 @@
                 </div>
             </div>
         </section>
-        <section class="appartments none1">
+        <section class="appartments">
             <div class="container">
                 <h2 class="appartments__title title">
                     Наші квартири
@@ -98,18 +104,18 @@
                 </div>
             </div>
         </section>
-        <section class="cta none1">
+        <section class="cta">
             <div class="container">
                 <h2 class="cta__title title">
                     Хочете подивитися?
                 </h2>
                 <div class="cta__wrapper">
-                <div class="cta__text">ЖК ROssHouse - це проект бізнес-класу, розташований в центрі міста, по вулиці Шолом-Алейхема, 1. Комплекс пропонує своїм мешканцям квартири площею від 40 до 270 кв. м. У будівлі буде три секції, в яких розміститься лише 56 квартир.</div>
+                    <div class="cta__text">ЖК ROssHouse - це проект бізнес-класу, розташований в центрі міста, по вулиці Шолом-Алейхема, 1. Комплекс пропонує своїм мешканцям квартири площею від 40 до 270 кв. м. У будівлі буде три секції, в яких розміститься лише 56 квартир.</div>
                     <form action="#" class="cta__form form">
                         <input type="text" class="form__input" placeholder="Ваше Ім'я" autocomplete="off">
                         <input type="text" class="form__input" placeholder="Ваше телефон" autocomplete="off">
                         
-                        <p class="form__privacy">
+                        <p class="form__privacy form__privacy--bottom">
                             *Ми нікому не передаємо ваші дані <br>
                             та не зберігаємо ваш номер у базі.  
                         </p>
@@ -118,7 +124,7 @@
                 </div>
             </div>
         </section>
-        <section class="video none1">
+        <section class="video">
             <div class="container">
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video__link">
                     <img src="./img/play-button.svg" alt="" class="video__icon">
@@ -127,7 +133,7 @@
                 </a>
             </div>
         </section>
-        <section class="section-map none1">
+        <section class="section-map">
             <div class="container">
                 <h2 class="map__title title">Район на мапі</h2>
                 <div class="map__google-map">
@@ -135,12 +141,12 @@
                 </div>
             </div>
         </section>
-        <section class="feedback none1">
+        <section class="feedback">
             <div class="container">
                 <h2 class="feedback__title title">Маєте запитання?</h2>
            
                 <form action="#" class="feedback__form form">
-                    <p class="form__privacy">
+                    <p class="form__privacy form__privacy--feedbackBottom">
                         *Ми нікому не передаємо ваші дані <br>
                         та не зберігаємо ваш номер у базі.  
                     </p>
@@ -199,6 +205,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

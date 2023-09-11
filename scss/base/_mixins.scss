@@ -7,3 +7,14 @@
     font-size: 400px;
     font-family: $font-accent;
 }
+
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet){
+        @content;
+    }
+}
+@mixin mediaMobile {
+    @media screen and (max-width: $mobile){
+        @content;
+    }
+}

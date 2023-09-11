@@ -21,8 +21,15 @@ body {
     font-family: $font-accent;
     font-weight: 700;
     color: $accent;
+
+    @include mediaTablet {
+        font-size: 28px;
+    }
 }
 .link-email{
     color: $accent !important;
     font-weight: 700;
+}
+.no-scroll {
+    overflow-y: hidden;
 }

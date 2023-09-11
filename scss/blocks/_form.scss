@@ -23,6 +23,21 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    &--bottom {
+        @include mediaMobile {
+            grid-row: 4/5;
+        }
+    }
+     &--feedbackBottom {
+        @include mediaTablet{
+            grid-row: 2/3;
+        }
+
+        @include mediaMobile {
+            grid-row: 4/5;
+        }
+    }
    
 }
 .form__btn {
