@@ -116,12 +116,13 @@
     }
 
     &--location::before {
-        background-image: url(../../img/location.svg);
+        background-image: url(./../img/location.svg);
     }
 
     &--tel::before {
-        background-image: url(../../img/call.svg);
+         background-image: url(./../img/call.svg);
     }
+
     @include mediaTablet{
        font-size: 14px;
        
