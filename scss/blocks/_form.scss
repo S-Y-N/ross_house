@@ -1,5 +1,3 @@
-.form {
-}
 .form__input {
     height: 50px;
     padding: 12px;
@@ -14,8 +12,8 @@
     &:focus{
         background-color: rgba($color: $white, $alpha: 0.25);
     }
-
 }
+
 .form__privacy {
     font-size: 13px;
     color: $privacy;
@@ -29,16 +27,15 @@
             grid-row: 4/5;
         }
     }
-     &--feedbackBottom {
-        @include mediaTablet{
-            grid-row: 2/3;
-        }
-
-        @include mediaMobile {
-            grid-row: 4/5;
-        }
+    &--feedbackBottom {
+    @include mediaTablet{
+        grid-row: 2/3;
     }
-   
+
+    @include mediaMobile {
+        grid-row: 4/5;
+    }
+}
 }
 .form__btn {
     height: 50px;

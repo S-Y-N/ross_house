@@ -29,7 +29,6 @@
 
         border: 3px double rgba($white,0.4);
         transition: opacity .2s ease-in;
-
     }
     &:hover::after{
         opacity: 1;

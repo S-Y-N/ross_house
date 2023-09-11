@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ross House</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/youtube/youtubeLightbox.css">
 </head>
 
 <body>
@@ -113,7 +114,7 @@
                     <div class="cta__text">ЖК ROssHouse - це проект бізнес-класу, розташований в центрі міста, по вулиці Шолом-Алейхема, 1. Комплекс пропонує своїм мешканцям квартири площею від 40 до 270 кв. м. У будівлі буде три секції, в яких розміститься лише 56 квартир.</div>
                     <form action="#" class="cta__form form">
                         <input type="text" class="form__input" placeholder="Ваше Ім'я" autocomplete="off">
-                        <input type="text" class="form__input" placeholder="Ваше телефон" autocomplete="off">
+                        <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
                         
                         <p class="form__privacy form__privacy--bottom">
                             *Ми нікому не передаємо ваші дані <br>
@@ -126,7 +127,7 @@
         </section>
         <section class="video">
             <div class="container">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video__link">
+                <a  href="https://www.youtube.com/watch?v=8hGvJ3oYQoM" data-youtubeLightbox class="video__link">
                     <img src="./img/play-button.svg" alt="" class="video__icon">
                     <img src="./img/video-img.jpg" alt="" class="video__img">
 
@@ -137,7 +138,8 @@
             <div class="container">
                 <h2 class="map__title title">Район на мапі</h2>
                 <div class="map__google-map">
-                    <div class="map" id="map"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321.9373117038199!2d30.118217567359373!3d49.79549527544436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d3421944e12dfd%3A0x3a087f2424d6c5da!2z0LLRg9C70LjRhtGPINCo0L7Qu9C-0Lwt0JDQu9C10LnRhdC10LzQsCwgMSwg0JHRltC70LAg0KbQtdGA0LrQstCwLCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA5MTAw!5e0!3m2!1suk!2sua!4v1694432667775!5m2!1suk!2sua" 
+                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
                 </div>
             </div>
         </section>
@@ -151,7 +153,7 @@
                         та не зберігаємо ваш номер у базі.  
                     </p>
                     <input type="text" class="form__input" placeholder="Ваше Ім'я" autocomplete="off">
-                    <input type="text" class="form__input" placeholder="Ваше телефон" autocomplete="off">
+                    <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
                     <button type="submit" class="form__btn">Переглянути район</button>
                 </form>
             </div>
@@ -205,7 +207,19 @@
             </div>
         </div>
     </footer>
+    <!-- YouTube LightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
 
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+    <script src="./libs/youtube/youtubeLightbox.js"></script>
+    <script src="./libs/jquery/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
